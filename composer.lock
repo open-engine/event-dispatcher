@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2dfb7c4460408c39be0481e0618feb7c",
+    "content-hash": "a1e62fdb8c6772e70ec65d1a07e25c96",
     "packages": [
         {
             "name": "psr/event-dispatcher",
@@ -155,6 +155,46 @@
                 "object graph"
             ],
             "time": "2018-06-11T23:09:50+00:00"
+        },
+        {
+            "name": "open-engine/run-tests",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-engine/run-tests.git",
+                "reference": "f7366132611fb3a9b40dbee702b2d145e567bbce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/open-engine/run-tests/zipball/f7366132611fb3a9b40dbee702b2d145e567bbce",
+                "reference": "f7366132611fb3a9b40dbee702b2d145e567bbce",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.2",
+                "phpunit/phpunit": "^7.4"
+            },
+            "bin": [
+                "bin/tests"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Akmal Kadirov",
+                    "email": "akmal@kadirov.org",
+                    "homepage": "http://kadirov.org/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "keywords": [
+                "php",
+                "tests"
+            ],
+            "time": "2019-01-12T18:06:30+00:00"
         },
         {
             "name": "phar-io/manifest",

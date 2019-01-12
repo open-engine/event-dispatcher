@@ -20,7 +20,7 @@ class ListenerProviderConfig implements ListenerProviderConfigInterface
      */
     public function addListener(string $eventClass, callable $listener, int $priority = 1000): void
     {
-        $this->listeners = new RegisteredListener($eventClass, $listener, $priority);
+        $this->listeners[] = new RegisteredListener($eventClass, $listener, $priority);
     }
 
     /**
