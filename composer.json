@@ -1,0 +1,34 @@
+{
+    "name": "open-engine/event-dispatcher",
+    "description": "Event Dispatcher",
+    "license": "GPL-3.0-or-later",
+    "type": "library",
+    "keywords": [
+        "php",
+        "event",
+        "event-dispatcher"
+    ],
+    "authors": [
+        {
+            "name": "Akmal Kadirov",
+            "email": "akmal@kadirov.org",
+            "homepage": "http://kadirov.org/",
+            "role": "Founder and project lead"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "classmap": [
+            "src/"
+        ]
+    },
+    "require": {
+        "php": "~7.2",
+        "psr/event-dispatcher": "~0.7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4"
+    }
+}
