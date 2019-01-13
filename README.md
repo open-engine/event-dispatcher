@@ -26,6 +26,8 @@ $config->addListener(FooEvent::class, function (FooEvent $event) {
     return $event;
 }, 20);
 
+$config->addListener(FooEvent::class, '\Acme\listeners\AnotherListener::methodName');
+
 // add another listeners 
 
 $listenerProvider = new ListenerProvider($config);
