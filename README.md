@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-GPL%203-green.svg)](https://github.com/open-engine/event-dispatcher/blob/master/LICENSE)
 
 # Event dispatcher
-Event dispatcher
+
 
 ## Event
 
