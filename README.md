@@ -6,3 +6,34 @@
 # Event dispatcher
 Event dispatcher
 
+## Event
+
+Event can be any class
+
+## Dispatch some event
+```php
+$dispatcher = new EventDispatcher($listenerProvier);
+$event = $dispatcher->dispatch(new FooEvent());
+```
+
+## Add listener to some event
+
+```php
+$config = new ListenerProviderConfig();
+
+$config->addListener(FooEvent::class, function (FooEvent $event) {
+    // do somthing
+    return $event;
+}, 20);
+
+// add another listeners 
+
+$listenerProvider = new ListenerProvider($config);
+
+```
+
+Add listener method parameters:
+* $eventClass <code>string</code> - Event name. It always equals to event class name
+* $listener <code>callable</code> - Listener is any callabe wich have only one paramater $event. Listener must return same $event
+* $priority <code>int</code> - Optiona. Default is 1000. Zero is highest priority
+
